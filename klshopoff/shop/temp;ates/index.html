@@ -1,14 +1,23 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    {% load static %}
- <link rel="stylesheet" href="{% static 'films/style.css' %}">
+  <meta charset="UTF-8">
+  <title>Title</title>
+   <link href="{% static 'shops/CSS/style.css' %}" rel="stylesheet">
 </head>
 <body>
-<h1> {{header1}} </h1>
-<p >   id  Магазина <i> {{id}} </i> </p>
-<p>здсь будет меню</p>
+  <nav>
+    <ul>
+      <li><a href="page1.html">Главное</a></li>
+      <li><a href="page2.html">Новое</a></li>
+      <li><a href="page3.html">О Нас</a></li>
+    </ul>
+  </nav>
+  <div id="content">
+    <!-- Содержимое страниц здесь -->
+  </div>
+  <script src="script.js"></script>
+<img src="{% static 'shop/images/image.png' %}">
 </body>
 </html>
